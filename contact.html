@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ | Celeste Trading</title>
+  <meta name="description" content="Celeste Tradingへのお問い合わせ。パートナーシップや製品についてのご質問など、お気軽にご連絡ください。">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">CELESTE <span>TRADING</span></a>
+
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="index.html" data-ja="ホーム" data-en="Home">ホーム</a></li>
+          <li><a href="about.html" data-ja="会社概要" data-en="About">会社概要</a></li>
+          <li><a href="services.html" data-ja="事業内容" data-en="Services">事業内容</a></li>
+          <li><a href="contact.html" class="active" data-ja="お問い合わせ" data-en="Contact">お問い合わせ</a></li>
+        </ul>
+
+        <div class="lang-switch">
+          <button class="active" data-lang="ja">JP</button>
+          <button data-lang="en">EN</button>
+        </div>
+
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 data-ja="お問い合わせ" data-en="Contact Us">お問い合わせ</h1>
+      <p data-ja="お気軽にご連絡ください" data-en="Feel free to reach out">お気軽にご連絡ください</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h3 data-ja="お問い合わせについて" data-en="About Inquiries">お問い合わせについて</h3>
+          <p data-ja="パートナーシップ、製品についてのご質問、取引条件のご相談など、お気軽にお問い合わせください。担当者より折り返しご連絡いたします。" data-en="Please feel free to contact us about partnership, product inquiries, or business terms. Our representative will get back to you shortly.">パートナーシップ、製品についてのご質問、取引条件のご相談など、お気軽にお問い合わせください。担当者より折り返しご連絡いたします。</p>
+
+          <ul class="contact-details">
+            <li>
+              <span>✉️</span>
+              <div>
+                <strong data-ja="メール" data-en="Email">メール</strong><br>
+                info@celeste-trading.jp
+              </div>
+            </li>
+            <li>
+              <span>🌐</span>
+              <div>
+                <strong data-ja="対応言語" data-en="Languages">対応言語</strong><br>
+                <span data-ja="日本語 / English" data-en="Japanese / English">日本語 / English</span>
+              </div>
+            </li>
+            <li>
+              <span>⏰</span>
+              <div>
+                <strong data-ja="営業時間" data-en="Business Hours">営業時間</strong><br>
+                <span data-ja="平日 9:00 - 18:00（JST）" data-en="Weekdays 9:00 - 18:00 (JST)">平日 9:00 - 18:00（JST）</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+          <div class="form-group">
+            <label for="company" data-ja="会社名" data-en="Company Name">会社名</label>
+            <input type="text" id="company" name="company" placeholder="Company Name">
+          </div>
+
+          <div class="form-group">
+            <label for="name" data-ja="お名前 *" data-en="Name *">お名前 *</label>
+            <input type="text" id="name" name="name" required placeholder="Your Name">
+          </div>
+
+          <div class="form-group">
+            <label for="email" data-ja="メールアドレス *" data-en="Email Address *">メールアドレス *</label>
+            <input type="email" id="email" name="email" required placeholder="your@email.com">
+          </div>
+
+          <div class="form-group">
+            <label for="subject" data-ja="件名" data-en="Subject">件名</label>
+            <select id="subject" name="subject">
+              <option value="" data-ja="選択してください" data-en="Please select">選択してください</option>
+              <option value="partnership" data-ja="パートナーシップについて" data-en="Partnership Inquiry">パートナーシップについて</option>
+              <option value="product" data-ja="製品について" data-en="Product Inquiry">製品について</option>
+              <option value="business" data-ja="取引条件について" data-en="Business Terms">取引条件について</option>
+              <option value="other" data-ja="その他" data-en="Other">その他</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message" data-ja="メッセージ *" data-en="Message *">メッセージ *</label>
+            <textarea id="message" name="message" required placeholder="Please enter your message here..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;" data-ja="送信する" data-en="Send Message">送信する</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section section-gray">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-subtitle" data-ja="FAQ" data-en="FAQ">FAQ</p>
+        <h2 class="section-title" data-ja="よくあるご質問" data-en="Frequently Asked Questions">よくあるご質問</h2>
+      </div>
+
+      <div class="features">
+        <div class="feature-card">
+          <h3 class="feature-title" data-ja="Q. どのような製品を取り扱っていますか？" data-en="Q. What products do you handle?">Q. どのような製品を取り扱っていますか？</h3>
+          <p class="feature-text" data-ja="A. 家電製品、工具・機械、生活雑貨を中心に取り扱っています。その他の商材についてもご相談ください。" data-en="A. We primarily handle home appliances, tools & machinery, and general goods. Please contact us for other product categories.">A. 家電製品、工具・機械、生活雑貨を中心に取り扱っています。その他の商材についてもご相談ください。</p>
+        </div>
+
+        <div class="feature-card">
+          <h3 class="feature-title" data-ja="Q. 最小ロット数はありますか？" data-en="Q. Is there a minimum order quantity?">Q. 最小ロット数はありますか？</h3>
+          <p class="feature-text" data-ja="A. 製品によって異なります。詳細はお問い合わせください。" data-en="A. It varies by product. Please contact us for details.">A. 製品によって異なります。詳細はお問い合わせください。</p>
+        </div>
+
+        <div class="feature-card">
+          <h3 class="feature-title" data-ja="Q. 契約までの流れを教えてください。" data-en="Q. What is the process for partnership?">Q. 契約までの流れを教えてください。</h3>
+          <p class="feature-text" data-ja="A. お問い合わせ → 市場分析 → ご提案 → 契約締結 → 販売開始 の流れとなります。" data-en="A. The process is: Inquiry → Market Analysis → Proposal → Contract → Sales Launch.">A. お問い合わせ → 市場分析 → ご提案 → 契約締結 → 販売開始 の流れとなります。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-about">
+          <div class="footer-logo">CELESTE TRADING</div>
+          <p class="footer-text" data-ja="海外メーカーの総代理店として、優れた製品を日本市場へお届けします。家電・雑貨・機械・工具など、幅広い商材を取り扱っています。" data-en="As an exclusive distributor for overseas manufacturers, we bring exceptional products to the Japanese market, including home appliances, general goods, machinery, and tools.">海外メーカーの総代理店として、優れた製品を日本市場へお届けします。家電・雑貨・機械・工具など、幅広い商材を取り扱っています。</p>
+        </div>
+
+        <div class="footer-nav">
+          <h4 class="footer-title" data-ja="メニュー" data-en="Menu">メニュー</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" data-ja="ホーム" data-en="Home">ホーム</a></li>
+            <li><a href="about.html" data-ja="会社概要" data-en="About">会社概要</a></li>
+            <li><a href="services.html" data-ja="事業内容" data-en="Services">事業内容</a></li>
+            <li><a href="contact.html" data-ja="お問い合わせ" data-en="Contact">お問い合わせ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4 class="footer-title" data-ja="お問い合わせ" data-en="Contact">お問い合わせ</h4>
+          <ul class="footer-links">
+            <li>info@celeste-trading.jp</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Celeste Trading. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
