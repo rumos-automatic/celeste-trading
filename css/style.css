@@ -123,6 +123,21 @@ a {
   border-radius: 16px;
 }
 
+.process-flow-section {
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.process-flow-img {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
 .nav {
   display: flex;
   align-items: center;
