@@ -169,11 +169,14 @@ a {
 
 .mission-label {
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.9rem;
-  font-weight: 600;
-  letter-spacing: 4px;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 6px;
   color: var(--celeste);
-  margin-bottom: 16px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--celeste);
+  display: inline-block;
 }
 
 .mission-title {
@@ -192,10 +195,15 @@ a {
 }
 
 .mission-cta {
-  font-weight: 600;
-  color: var(--celeste) !important;
-  font-size: 1.1rem !important;
-  margin-top: 30px;
+  font-weight: 700;
+  color: var(--white) !important;
+  font-size: 1.3rem !important;
+  margin-top: 40px;
+  padding: 20px 30px;
+  background: linear-gradient(135deg, var(--celeste) 0%, var(--celeste-dark) 100%);
+  border-radius: 8px;
+  display: inline-block;
+  box-shadow: 0 4px 20px rgba(51, 204, 204, 0.3);
 }
 
 @media (max-width: 768px) {
