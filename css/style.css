@@ -174,7 +174,8 @@ a {
   letter-spacing: 6px;
   color: var(--celeste);
   margin-bottom: 20px;
-  padding-bottom: 15px;
+  padding-top: 80px;
+  padding-bottom: 10px;
   border-bottom: 2px solid var(--celeste);
   display: inline-block;
 }
