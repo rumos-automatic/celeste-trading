@@ -3,7 +3,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
   // ==========================================
-  // Language Switcher
+  // Language Switcher (Japanese, English, Chinese)
   // ==========================================
   const langButtons = document.querySelectorAll('.lang-switch button');
   let currentLang = localStorage.getItem('language') || 'ja';
@@ -20,6 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   function setLanguage(lang) {
+    currentLang = lang;
+
     // Update button states
     langButtons.forEach(btn => {
       btn.classList.remove('active');
@@ -29,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Update all translatable elements
-    const elements = document.querySelectorAll('[data-ja][data-en]');
+    const elements = document.querySelectorAll('[data-ja]');
     elements.forEach(el => {
       const text = el.getAttribute(`data-${lang}`);
       if (text) {
@@ -146,7 +148,8 @@ document.addEventListener('DOMContentLoaded', function() {
       const submitBtn = this.querySelector('button[type="submit"]');
       const originalText = submitBtn.innerHTML;
 
-      submitBtn.innerHTML = currentLang === 'ja' ? '送信中...' : 'Sending...';
+      const sendingText = { ja: '送信中...', en: 'Sending...', zh: '发送中...' };
+      submitBtn.innerHTML = sendingText[currentLang] || '送信中...';
       submitBtn.disabled = true;
 
       // Re-enable button after form submission (in case of error)
