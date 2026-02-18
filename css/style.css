@@ -1,6 +1,6 @@
 /* ==========================================
    Celeste Trading - Stylesheet
-   Color Theme: Celeste (#89CFF0)
+   Color Theme: Celeste (#33cccc)
    ========================================== */
 
 /* Reset & Base */
@@ -11,9 +11,9 @@
 }
 
 :root {
-  --celeste: #89CFF0;
-  --celeste-dark: #5BADE8;
-  --celeste-light: #B8E2F8;
+  --celeste: #33cccc;
+  --celeste-dark: #2ab3b3;
+  --celeste-light: #b3e6e6;
   --navy: #1a365d;
   --dark: #2d3748;
   --gray: #718096;
