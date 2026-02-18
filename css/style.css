@@ -611,10 +611,11 @@ a {
 }
 
 .about-text h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: var(--navy);
   margin-bottom: 30px;
   font-weight: 600;
+  white-space: nowrap;
 }
 
 .about-text p {
