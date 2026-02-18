@@ -582,7 +582,7 @@ a {
 
 /* About Page */
 .page-hero {
-  padding: 120px 0 35px;
+  padding: 90px 0 35px;
   background: linear-gradient(180deg, var(--white) 0%, var(--celeste-light) 100%);
   text-align: center;
   position: relative;
