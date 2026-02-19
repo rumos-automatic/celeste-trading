@@ -136,7 +136,7 @@ a {
 /* Process Flow - 5-step horizontal layout */
 .process-flow {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   gap: 0;
   max-width: 960px;
@@ -147,6 +147,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
   padding: 28px 18px;
   border: 2px solid var(--celeste);
