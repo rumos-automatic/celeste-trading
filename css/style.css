@@ -751,7 +751,7 @@ a {
 
 .contact-details li {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 20px;
   padding: 20px 0;
   color: var(--dark);
@@ -769,7 +769,6 @@ a {
   justify-content: center;
   flex-shrink: 0;
   color: var(--celeste);
-  margin-top: 2px;
 }
 
 .contact-icon svg {
