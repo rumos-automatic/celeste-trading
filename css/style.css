@@ -769,6 +769,7 @@ a {
   justify-content: center;
   flex-shrink: 0;
   color: var(--celeste);
+  margin-top: 2px;
 }
 
 .contact-icon svg {
