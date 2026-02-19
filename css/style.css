@@ -202,7 +202,7 @@ a {
 .mission-cta {
   font-weight: 700;
   color: var(--celeste) !important;
-  font-size: 1.4rem !important;
+  font-size: 1.25rem !important;
   margin-top: 40px;
   text-shadow: 0 0 20px rgba(51, 204, 204, 0.6), 0 0 40px rgba(51, 204, 204, 0.4);
   letter-spacing: 0.05em;
