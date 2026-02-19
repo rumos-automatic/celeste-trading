@@ -617,16 +617,29 @@ a {
   transform: scaleX(1);
 }
 
+.feature-num {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--celeste-light);
+  line-height: 1;
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+
 .feature-icon {
-  width: 70px;
-  height: 70px;
-  background: var(--celeste-light);
+  width: 56px;
+  height: 56px;
+  color: var(--celeste);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 30px;
-  font-size: 1.8rem;
-  border-radius: 0;
+  margin: 0 auto 24px;
+}
+
+.feature-icon svg {
+  width: 100%;
+  height: 100%;
 }
 
 .feature-title {
