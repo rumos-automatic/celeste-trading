@@ -763,17 +763,11 @@ a {
 }
 
 .contact-details li > span {
-  width: 50px;
-  height: 50px;
-  background: var(--celeste-light);
+  width: 28px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  border-radius: 8px;
-}
-
-.contact-icon {
   color: var(--celeste);
 }
 
