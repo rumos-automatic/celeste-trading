@@ -133,13 +133,136 @@ a {
   border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.process-flow-img {
-  width: 100%;
-  max-width: 900px;
-  height: auto;
-  display: block;
+/* Process Flow - 5-step horizontal layout */
+.process-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  max-width: 960px;
   margin: 0 auto;
-  border-radius: 12px;
+}
+
+.process-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 28px 18px;
+  border: 2px solid var(--celeste);
+  border-radius: 16px;
+  background: var(--white);
+  min-width: 140px;
+  max-width: 160px;
+  flex: 1;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.process-step:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(51, 204, 204, 0.15);
+}
+
+.process-step-icon {
+  width: 44px;
+  height: 44px;
+  color: var(--celeste);
+  margin-bottom: 10px;
+}
+
+.process-step-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.process-step-num {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--celeste);
+  letter-spacing: 0.1em;
+  margin-bottom: 6px;
+}
+
+.process-step-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--dark);
+  line-height: 1.4;
+}
+
+/* Loop badge on last step */
+.process-step-loop {
+  border-color: var(--celeste);
+  background: var(--celeste-light);
+}
+
+.process-loop-badge {
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--celeste);
+  color: var(--white);
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 2px 14px;
+  border-radius: 10px;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+
+/* Arrows between steps */
+.process-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 32px;
+  color: var(--celeste);
+}
+
+.process-arrow svg {
+  width: 24px;
+  height: 24px;
+}
+
+.process-arrow-right {
+  display: block;
+}
+
+.process-arrow-down {
+  display: none;
+}
+
+/* Responsive: vertical layout on mobile */
+@media (max-width: 768px) {
+  .process-flow {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .process-step {
+    min-width: 200px;
+    max-width: 260px;
+    width: 100%;
+    flex: none;
+  }
+
+  .process-arrow {
+    width: auto;
+    height: 32px;
+    transform: none;
+  }
+
+  .process-arrow-right {
+    display: none;
+  }
+
+  .process-arrow-down {
+    display: block;
+  }
 }
 
 /* Mission Section */
