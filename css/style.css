@@ -99,6 +99,8 @@ a {
   width: auto;
   margin-right: 12px;
   vertical-align: middle;
+  position: relative;
+  top: -2px;
 }
 
 .footer-logo-img {
@@ -106,6 +108,8 @@ a {
   width: auto;
   margin-right: 12px;
   vertical-align: middle;
+  position: relative;
+  top: -2px;
 }
 
 .feature-img {
