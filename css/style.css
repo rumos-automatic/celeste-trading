@@ -192,27 +192,6 @@ a {
   line-height: 1.4;
 }
 
-/* Loop badge on last step */
-.process-step-loop {
-  border-color: var(--celeste);
-  background: var(--celeste-light);
-}
-
-.process-loop-badge {
-  position: absolute;
-  bottom: -12px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--celeste);
-  color: var(--white);
-  font-size: 0.65rem;
-  font-weight: 700;
-  padding: 2px 14px;
-  border-radius: 10px;
-  letter-spacing: 0.1em;
-  white-space: nowrap;
-}
-
 /* Arrows between steps */
 .process-arrow {
   display: flex;
