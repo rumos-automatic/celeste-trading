@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
       heroSlides[currentSlide].classList.remove('active');
       currentSlide = (currentSlide + 1) % heroSlides.length;
       heroSlides[currentSlide].classList.add('active');
-    }, 3000);
+    }, 5000);
   }
 
   // ==========================================
