@@ -416,42 +416,57 @@ a {
   transition: all 0.3s ease;
 }
 
-/* Hero Section - Luxurious */
+/* Hero Section - Full-screen Slideshow */
 .hero {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: var(--navy);
+  justify-content: center;
   padding-top: 100px;
   position: relative;
   overflow: hidden;
 }
 
-.hero::before {
-  content: '';
+.hero-slideshow {
   position: absolute;
   top: 0;
-  right: 0;
-  width: 50%;
+  left: 0;
+  width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, transparent 0%, rgba(51, 204, 204, 0.08) 100%);
+  z-index: 0;
 }
 
-.hero::after {
-  content: '';
+.hero-slide {
   position: absolute;
-  bottom: -2px;
+  top: 0;
   left: 0;
-  right: 0;
-  height: 150px;
-  background: linear-gradient(to top, var(--navy), transparent);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+}
+
+.hero-slide.active {
+  opacity: 1;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(13, 27, 42, 0.55);
+  z-index: 1;
 }
 
 .hero .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: center;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 900px;
 }
 
 .hero-content {
@@ -469,8 +484,10 @@ a {
   margin-bottom: 30px;
   letter-spacing: 4px;
   text-transform: uppercase;
-  border-left: 3px solid var(--celeste);
-  padding-left: 15px;
+  border-left: none;
+  padding-left: 0;
+  border-bottom: 2px solid var(--celeste);
+  padding-bottom: 10px;
 }
 
 .hero-title {
@@ -498,6 +515,7 @@ a {
 .hero-buttons {
   display: flex;
   gap: 20px;
+  justify-content: center;
 }
 
 .hero-buttons .btn-primary {
@@ -521,23 +539,6 @@ a {
   color: var(--navy);
 }
 
-.hero-image {
-  position: relative;
-  z-index: 1;
-}
-
-.hero-image img {
-  width: 100%;
-  height: 340px;
-  object-fit: cover;
-  border-radius: 20px;
-  margin-top: 60px;
-}
-
-.hero-image > div {
-  border-radius: 0 !important;
-  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.1) !important;
-}
 
 /* Buttons - Premium */
 .btn {
@@ -1045,19 +1046,6 @@ a {
   .hero-content {
     max-width: 600px;
     margin: 0 auto;
-  }
-
-  .hero-subtitle {
-    border-left: none;
-    padding-left: 0;
-  }
-
-  .hero-buttons {
-    justify-content: center;
-  }
-
-  .hero-image {
-    display: none;
   }
 
   .features {

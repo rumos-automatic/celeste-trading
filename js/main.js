@@ -97,6 +97,19 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // ==========================================
+  // Hero Slideshow
+  // ==========================================
+  const heroSlides = document.querySelectorAll('.hero-slide');
+  if (heroSlides.length > 1) {
+    let currentSlide = 0;
+    setInterval(() => {
+      heroSlides[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide + 1) % heroSlides.length;
+      heroSlides[currentSlide].classList.add('active');
+    }, 3000);
+  }
+
+  // ==========================================
   // Smooth Scroll for Anchor Links
   // ==========================================
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
