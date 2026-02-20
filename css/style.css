@@ -505,6 +505,13 @@ a {
   z-index: 1;
 }
 
+.hero-image img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
 .hero-image > div {
   border-radius: 0 !important;
   box-shadow: 0 40px 80px rgba(0, 0, 0, 0.1) !important;
