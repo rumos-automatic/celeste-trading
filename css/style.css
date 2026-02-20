@@ -421,7 +421,7 @@ a {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(180deg, var(--white) 0%, var(--celeste-light) 100%);
+  background: var(--navy);
   padding-top: 100px;
   position: relative;
   overflow: hidden;
@@ -434,7 +434,7 @@ a {
   right: 0;
   width: 50%;
   height: 100%;
-  background: linear-gradient(135deg, transparent 0%, rgba(51, 204, 204, 0.05) 100%);
+  background: linear-gradient(135deg, transparent 0%, rgba(51, 204, 204, 0.08) 100%);
 }
 
 .hero::after {
@@ -444,7 +444,7 @@ a {
   left: 0;
   right: 0;
   height: 150px;
-  background: linear-gradient(to top, var(--white), transparent);
+  background: linear-gradient(to top, var(--navy), transparent);
 }
 
 .hero .container {
@@ -475,7 +475,7 @@ a {
 
 .hero-title {
   font-size: 3.5rem;
-  color: var(--navy);
+  color: var(--white);
   margin-bottom: 30px;
   letter-spacing: 0.02em;
   font-weight: 700;
@@ -489,7 +489,7 @@ a {
 
 .hero-text {
   font-size: 1rem;
-  color: var(--gray);
+  color: rgba(255, 255, 255, 0.7);
   margin-bottom: 45px;
   line-height: 2.2;
   font-weight: 400;
@@ -498,6 +498,27 @@ a {
 .hero-buttons {
   display: flex;
   gap: 20px;
+}
+
+.hero-buttons .btn-primary {
+  background: var(--celeste);
+  color: var(--white);
+}
+
+.hero-buttons .btn-primary:hover {
+  background: var(--white);
+  color: var(--navy);
+  box-shadow: 0 15px 40px rgba(255, 255, 255, 0.15);
+}
+
+.hero-buttons .btn-outline {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: var(--white);
+}
+
+.hero-buttons .btn-outline:hover {
+  background: var(--white);
+  color: var(--navy);
 }
 
 .hero-image {
