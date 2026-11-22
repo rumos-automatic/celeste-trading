@@ -3,7 +3,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
   // ==========================================
-  // Language Switcher (Japanese, English, Chinese)
+  // Language Switcher (Japanese, English, Chinese, Korean)
   // ==========================================
   const langButtons = document.querySelectorAll('.lang-switch button');
   let currentLang = localStorage.getItem('language') || 'ja';
@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const submitBtn = this.querySelector('button[type="submit"]');
       const originalText = submitBtn.innerHTML;
 
-      const sendingText = { ja: '送信中...', en: 'Sending...', zh: '发送中...' };
+      const sendingText = { ja: '送信中...', en: 'Sending...', zh: '发送中...', ko: '전송 중...' };
       submitBtn.innerHTML = sendingText[currentLang] || '送信中...';
       submitBtn.disabled = true;
 
