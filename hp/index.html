@@ -4,192 +4,168 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Celeste Trading | 海外製品の総代理店</title>
-  <meta name="description" content="Celeste Tradingは、ブランド代理店事業・EC運営事業・広告運営事業を展開する総合商社です。">
+  <meta name="description" content="Celeste Tradingは、ブランド代理店事業・EC運営事業・広告運営事業を通じて、海外メーカーの日本市場展開をトータルサポートします。">
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="css/style.css?v=2">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Zen+Kaku+Gothic+New:wght@400;500&family=Noto+Sans+SC:wght@400;500&family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=4">
 </head>
 <body>
+
   <!-- Header -->
   <header class="header">
-    <div class="container">
-      <a href="index.html" class="logo"><img src="images/logo.png" alt="Celeste Trading" class="logo-img">CELESTE <span>TRADING</span></a>
-
+    <div class="wrap">
+      <a href="index.html" class="logo"><img src="images/logo.png" alt="">CELESTE<span class="logo-sub">&nbsp;TRADING</span></a>
       <nav class="nav">
         <ul class="nav-links">
-          <li><a href="index.html" class="active" data-ja="ホーム" data-en="Home" data-zh="首页" data-ko="홈">ホーム</a></li>
-          <li><a href="about.html" data-ja="会社概要" data-en="About" data-zh="公司简介" data-ko="회사소개">会社概要</a></li>
-          <li><a href="services.html" data-ja="事業内容" data-en="Services" data-zh="业务内容" data-ko="사업내용">事業内容</a></li>
-          <li><a href="contact.html" data-ja="お問い合わせ" data-en="Contact" data-zh="联系我们" data-ko="문의하기">お問い合わせ</a></li>
+          <li><a href="services.html">Business</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="about.html">Company</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-
         <div class="lang-switch">
           <button class="active" data-lang="ja">JP</button>
           <button data-lang="en">EN</button>
           <button data-lang="zh">中文</button>
-          <button data-lang="ko">한국어</button>
+          <button data-lang="ko">KR</button>
         </div>
-
-        <div class="menu-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+        <a href="contact.html" class="nav-contact">CONTACT</a>
+        <div class="menu-toggle"><span></span><span></span><span></span></div>
       </nav>
     </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section class="hero">
-    <div class="hero-slideshow">
-      <div class="hero-slide active" style="background-image:url('images/hero-1.jpg')"></div>
-      <div class="hero-slide" style="background-image:url('images/hero-2.jpg')"></div>
-      <div class="hero-slide" style="background-image:url('images/hero-3.jpg')"></div>
-      <div class="hero-slide" style="background-image:url('images/hero-4.jpg')"></div>
-      <div class="hero-slide" style="background-image:url('images/hero-5.jpg')"></div>
+    <div class="hero-bg" style="background-image:url('images/hero-4.jpg')"></div>
+    <div class="wrap">
+      <p class="hero-eyebrow">GLOBAL TRADING PARTNER</p>
+      <h1 class="hero-title" data-ja="世界の優れた製品を、<br>日本の暮らしへ。" data-en="World-class products,<br>for life in Japan." data-zh="将世界优质产品，<br>带入日本生活。" data-ko="세계의 우수한 제품을,<br>일본의 일상으로.">世界の優れた製品を、<br>日本の暮らしへ。</h1>
+      <p class="hero-text" data-ja="Celeste Tradingは、海外メーカーの日本総代理店として<br>市場テストから本格販売までを一貫して手がけます。" data-en="As the exclusive Japan partner for overseas makers, Celeste Trading handles everything from market testing to full-scale sales." data-zh="Celeste Trading作为海外制造商的日本总代理，<br>一站式负责从市场测试到正式销售的全过程。" data-ko="Celeste Trading은 해외 제조사의 일본 총판으로서<br>시장 테스트부터 본격 판매까지 일관되게 담당합니다.">Celeste Tradingは、海外メーカーの日本総代理店として<br>市場テストから本格販売までを一貫して手がけます。</p>
     </div>
-    <div class="hero-overlay"></div>
-    <div class="container">
-      <div class="hero-content">
-        <span class="hero-subtitle" data-ja="GLOBAL TRADING PARTNER" data-en="GLOBAL TRADING PARTNER" data-zh="全球贸易伙伴" data-ko="GLOBAL TRADING PARTNER">GLOBAL TRADING PARTNER</span>
-        <h1 class="hero-title" data-ja="世界の優れた製品を<br><span>日本へ届ける</span>" data-en="Bringing World-Class<br><span>Products to Japan</span>" data-zh="将世界优质产品<br><span>带到日本</span>" data-ko="세계의 우수한 제품을<br><span>일본으로 전달하다</span>">世界の優れた製品を<br><span>日本へ届ける</span></h1>
-        <p class="hero-text" data-ja="Celeste Tradingは、ブランド代理店事業・EC運営事業・広告運営事業を通じて<br>海外メーカーの日本市場展開をトータルサポートします。" data-en="Celeste Trading provides comprehensive support for overseas manufacturers entering the Japanese market<br>through brand agency, e-commerce operations, and advertising management services." data-zh="Celeste Trading通过品牌代理、电商运营和广告管理业务<br>为海外制造商进入日本市场提供全方位支持。" data-ko="Celeste Trading은 브랜드 대리점 사업·EC 운영 사업·광고 운영 사업을 통해<br>해외 제조업체의 일본 시장 진출을 토탈 서포트합니다.">Celeste Tradingは、ブランド代理店事業・EC運営事業・広告運営事業を通じて<br>海外メーカーの日本市場展開をトータルサポートします。</p>
-        <div class="hero-buttons">
-          <a href="contact.html" class="btn btn-primary" data-ja="お問い合わせ" data-en="Contact Us" data-zh="联系我们" data-ko="문의하기">お問い合わせ</a>
-          <a href="about.html" class="btn btn-outline" data-ja="詳しく見る" data-en="Learn More" data-zh="了解更多" data-ko="자세히 보기">詳しく見る</a>
-        </div>
-      </div>
-    </div>
+    <div class="scroll-cue">SCROLL</div>
   </section>
 
-  <!-- Services Section (3つの事業) -->
+  <!-- Message -->
   <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-subtitle" data-ja="OUR BUSINESS" data-en="OUR BUSINESS" data-zh="我们的业务" data-ko="OUR BUSINESS">OUR BUSINESS</p>
-        <h2 class="section-title" data-ja="3つの事業" data-en="Three Business Pillars" data-zh="三大业务" data-ko="3가지 사업">3つの事業</h2>
-      </div>
-
-      <div class="features">
-        <div class="feature-card">
-          <div class="feature-num">01</div>
-          <div class="feature-divider"></div>
-          <h3 class="feature-title" data-ja="ブランド代理店事業" data-en="Brand Agency" data-zh="品牌代理业务" data-ko="브랜드 대리점 사업">ブランド代理店事業</h3>
-          <p class="feature-text" data-ja="クラウドファンディングから本格販売まで、日本市場参入を総合サポート。" data-en="Comprehensive support from crowdfunding to full-scale sales in Japan." data-zh="从众筹到正式销售，全面支持进入日本市场。" data-ko="크라우드펀딩부터 본격 판매까지, 일본 시장 진출을 종합 서포트.">クラウドファンディングから本格販売まで、日本市場参入を総合サポート。</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-num">02</div>
-          <div class="feature-divider"></div>
-          <h3 class="feature-title" data-ja="EC運営事業" data-en="E-Commerce Operations" data-zh="电商运营业务" data-ko="EC 운영 사업">EC運営事業</h3>
-          <p class="feature-text" data-ja="Amazon・楽天等の主要ECモールでの販売代行・運営。年商1億円超の実績。" data-en="Sales operations on Amazon, Rakuten and other major EC platforms." data-zh="在Amazon、乐天等主要电商平台进行销售代理和运营。" data-ko="Amazon·라쿠텐 등 주요 EC몰에서의 판매 대행·운영. 연매출 1억 엔 이상의 실적.">Amazon・楽天等の主要ECモールでの販売代行・運営。年商1億円超の実績。</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-num">03</div>
-          <div class="feature-divider"></div>
-          <h3 class="feature-title" data-ja="広告運営事業" data-en="Advertising Operations" data-zh="广告运营业务" data-ko="광고 운영 사업">広告運営事業</h3>
-          <p class="feature-text" data-ja="SNS広告やインフルエンサー施策など、デジタルマーケティングで販促支援。" data-en="Promotional support via SNS ads, influencer marketing and more." data-zh="通过SNS广告和网红营销等数字手段支持促销。" data-ko="SNS 광고와 인플루언서 시책 등 디지털 마케팅으로 판촉 지원.">SNS広告やインフルエンサー施策など、デジタルマーケティングで販促支援。</p>
-        </div>
+    <div class="wrap">
+      <div class="heading reveal"><h2 class="en">MESSAGE</h2><span class="jp" data-ja="私たちの想い" data-en="Our Belief" data-zh="我们的理念" data-ko="우리의 생각">私たちの想い</span></div>
+      <div class="message reveal">
+        <p class="message-lead" data-ja="良いものは、国境を越えて届くべきだ。" data-en="Great products deserve to cross borders." data-zh="好的产品，理应跨越国界。" data-ko="좋은 제품은 국경을 넘어 전해져야 합니다.">良いものは、国境を越えて届くべきだ。</p>
+        <p data-ja="世界には、まだ日本に届いていない優れた製品がたくさんあります。<br>私たちはそれを見つけ出し、日本の生活者に合わせて磨き上げ、<br>メーカーと共に長く愛されるブランドへと育てていきます。" data-en="There are countless excellent products around the world that have yet to reach Japan. We discover them, refine them for Japanese consumers, and grow them into long-loved brands together with their makers." data-zh="世界上还有许多尚未进入日本的优秀产品。<br>我们发掘它们，根据日本消费者的需求进行打磨，<br>与制造商一起将其培育成长久受欢迎的品牌。" data-ko="세계에는 아직 일본에 전해지지 않은 우수한 제품이 많이 있습니다.<br>저희는 그것을 찾아내어 일본 소비자에 맞게 다듬고,<br>제조사와 함께 오래 사랑받는 브랜드로 키워 갑니다.">世界には、まだ日本に届いていない優れた製品がたくさんあります。<br>私たちはそれを見つけ出し、日本の生活者に合わせて磨き上げ、<br>メーカーと共に長く愛されるブランドへと育てていきます。</p>
       </div>
     </div>
   </section>
 
-  <!-- Products Section -->
+  <!-- Business -->
+  <section id="business" class="section" style="padding-bottom:0">
+    <div class="wrap">
+      <div class="heading reveal"><h2 class="en">BUSINESS</h2><span class="jp" data-ja="事業紹介" data-en="What We Do" data-zh="业务介绍" data-ko="사업 소개">事業紹介</span></div>
+    </div>
+
+    <div class="band">
+      <div class="band-bg" style="background-image:url('images/brand-agency.jpg')"></div>
+      <div class="band-body"><div class="band-text reveal">
+        <p class="band-num">01</p>
+        <h3 class="band-en">Brand<br>Agency</h3>
+        <p class="band-jp" data-ja="海外ブランド総代理店事業" data-en="Exclusive Japan Distribution" data-zh="海外品牌总代理业务" data-ko="해외 브랜드 총판 사업">海外ブランド総代理店事業</p>
+        <p class="band-desc" data-ja="単なる輸入販売ではなく、クラウドファンディングでの市場テストからローカライズ、販売戦略、本格販売までをトータルで担います。" data-en="More than importing: we take products from crowdfunding market tests through localization, sales strategy and full-scale distribution." data-zh="不只是进口销售，从众筹市场测试到本地化、销售战略和正式销售，全程负责。" data-ko="단순한 수입 판매가 아니라, 크라우드펀딩 시장 테스트부터 현지화·판매 전략·본격 판매까지 토탈로 담당합니다.">単なる輸入販売ではなく、クラウドファンディングでの市場テストからローカライズ、販売戦略、本格販売までをトータルで担います。</p>
+        <a href="services.html" class="btn-line">MORE</a>
+      </div></div>
+    </div>
+
+    <div class="band left">
+      <div class="band-bg" style="background-image:url('images/ec-operations.jpg')"></div>
+      <div class="band-body"><div class="band-text reveal">
+        <p class="band-num">02</p>
+        <h3 class="band-en">E-Commerce<br>Operations</h3>
+        <p class="band-jp" data-ja="EC運営事業" data-en="Marketplace Management" data-zh="电商运营业务" data-ko="EC 운영 사업">EC運営事業</p>
+        <p class="band-desc" data-ja="Amazon・楽天市場・Yahoo!ショッピングの3大モールで、商品ページ制作から物流、カスタマーサポートまで運営します。" data-en="We run listings, logistics and customer support on Japan's three major marketplaces: Amazon, Rakuten and Yahoo! Shopping." data-zh="在Amazon、乐天市场、Yahoo!购物三大电商平台，负责从商品页面制作到物流、客服的全面运营。" data-ko="Amazon·라쿠텐·Yahoo! 쇼핑의 3대 몰에서 상품 페이지 제작부터 물류, 고객 지원까지 운영합니다.">Amazon・楽天市場・Yahoo!ショッピングの3大モールで、商品ページ制作から物流、カスタマーサポートまで運営します。</p>
+        <a href="services.html" class="btn-line">MORE</a>
+      </div></div>
+    </div>
+
+    <div class="band">
+      <div class="band-bg" style="background-image:url('images/advertising-ops.jpg')"></div>
+      <div class="band-body"><div class="band-text reveal">
+        <p class="band-num">03</p>
+        <h3 class="band-en">Marketing &amp;<br>Advertising</h3>
+        <p class="band-jp" data-ja="広告運営事業" data-en="Digital Promotion" data-zh="广告运营业务" data-ko="광고 운영 사업">広告運営事業</p>
+        <p class="band-desc" data-ja="SNS広告、インフルエンサー施策、プレスリリースまで。日本の生活者に届くプロモーションを設計・運用します。" data-en="From social ads and influencer campaigns to press releases, we design and run promotions that reach Japanese consumers." data-zh="从SNS广告、网红营销到新闻稿，设计并执行触达日本消费者的推广。" data-ko="SNS 광고, 인플루언서 시책, 보도자료까지. 일본 소비자에게 닿는 프로모션을 설계·운영합니다.">SNS広告、インフルエンサー施策、プレスリリースまで。日本の生活者に届くプロモーションを設計・運用します。</p>
+        <a href="services.html" class="btn-line">MORE</a>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- Facts -->
   <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-subtitle" data-ja="PRODUCTS" data-en="PRODUCTS" data-zh="产品" data-ko="PRODUCTS">PRODUCTS</p>
-        <h2 class="section-title" data-ja="取扱商材" data-en="Our Products" data-zh="经营产品" data-ko="취급 상품">取扱商材</h2>
-      </div>
-
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-image"><img src="images/appliances.jpg" alt="家電製品"></div>
-          <div class="service-content">
-            <h3 data-ja="家電製品" data-en="Home Appliances" data-zh="家电产品" data-ko="가전제품">家電製品</h3>
-            <p data-ja="海外の革新的な家電製品を日本のご家庭へ。品質と安全性を確保した製品をお届けします。" data-en="Bringing innovative home appliances from overseas to Japanese households with assured quality and safety." data-zh="将海外创新家电产品带给日本家庭，确保产品质量和安全性。" data-ko="해외의 혁신적인 가전제품을 일본 가정에. 품질과 안전성을 확보한 제품을 전달합니다.">海外の革新的な家電製品を日本のご家庭へ。品質と安全性を確保した製品をお届けします。</p>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <div class="service-image"><img src="images/tools.jpg" alt="工具・機械"></div>
-          <div class="service-content">
-            <h3 data-ja="工具・機械" data-en="Tools & Machinery" data-zh="工具与机械" data-ko="공구·기계">工具・機械</h3>
-            <p data-ja="プロフェッショナル向けの高品質な工具・機械類。海外の技術力を日本の現場へ。" data-en="High-quality professional tools and machinery. Bringing overseas engineering excellence to Japanese worksites." data-zh="面向专业人士的高品质工具和机械。将海外技术实力带到日本工作现场。" data-ko="전문가를 위한 고품질 공구·기계류. 해외의 기술력을 일본 현장으로.">プロフェッショナル向けの高品質な工具・機械類。海外の技術力を日本の現場へ。</p>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <div class="service-image"><img src="images/lifestyle.jpg" alt="生活雑貨"></div>
-          <div class="service-content">
-            <h3 data-ja="生活雑貨" data-en="General Goods" data-zh="生活杂货" data-ko="생활잡화">生活雑貨</h3>
-            <p data-ja="デザイン性と機能性を兼ね備えた海外の生活雑貨。暮らしを豊かにするアイテムをセレクト。" data-en="Overseas lifestyle goods combining design and functionality. Carefully selected items to enrich daily life." data-zh="兼具设计感和功能性的海外生活杂货。精选丰富生活的商品。" data-ko="디자인과 기능성을 겸비한 해외 생활잡화. 생활을 풍요롭게 하는 아이템을 엄선.">デザイン性と機能性を兼ね備えた海外の生活雑貨。暮らしを豊かにするアイテムをセレクト。</p>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <div class="service-image"><img src="images/apparel.jpg" alt="アパレル"></div>
-          <div class="service-content">
-            <h3 data-ja="アパレル" data-en="Apparel" data-zh="服装" data-ko="의류">アパレル</h3>
-            <p data-ja="海外ブランドのファッションアイテム。トレンドを押さえたアパレル商品を日本市場へ。" data-en="Fashion items from overseas brands. Bringing trendy apparel products to the Japanese market." data-zh="海外品牌时尚单品。将潮流服装产品引入日本市场。" data-ko="해외 브랜드의 패션 아이템. 트렌드를 반영한 의류 상품을 일본 시장에.">海外ブランドのファッションアイテム。トレンドを押さえたアパレル商品を日本市場へ。</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="text-center mt-40">
-        <a href="services.html" class="btn btn-primary" data-ja="事業内容を詳しく見る" data-en="View All Services" data-zh="查看所有服务" data-ko="사업내용 자세히 보기">事業内容を詳しく見る</a>
+    <div class="wrap">
+      <div class="facts reveal">
+        <div class="fact"><p class="fact-num">3<small>YEARS+</small></p><p class="fact-label" data-ja="日本EC市場での販売経験" data-en="Selling in Japanese e-commerce" data-zh="日本电商销售经验" data-ko="일본 EC 시장 판매 경험">日本EC市場での販売経験</p></div>
+        <div class="fact"><p class="fact-num">¥100<small>M+</small></p><p class="fact-label" data-ja="EC事業の年間売上" data-en="Annual e-commerce sales" data-zh="电商业务年销售额" data-ko="EC 사업 연간 매출">EC事業の年間売上</p></div>
+        <div class="fact"><p class="fact-num">3<small>MALLS</small></p><p class="fact-label" data-ja="Amazon・楽天・Yahoo!で販売" data-en="Amazon, Rakuten, Yahoo!" data-zh="Amazon・乐天・Yahoo!" data-ko="Amazon·라쿠텐·Yahoo!">Amazon・楽天・Yahoo!で販売</p></div>
       </div>
     </div>
   </section>
 
-  <!-- CTA Section -->
-  <section class="section section-gray">
-    <div class="container text-center">
-      <h2 class="section-title" data-ja="パートナーシップのご相談" data-en="Partnership Inquiry" data-zh="合作咨询" data-ko="파트너십 상담">パートナーシップのご相談</h2>
-      <p class="mt-20 mb-40" style="color: var(--gray);" data-ja="日本市場への展開をお考えの海外メーカー様、お気軽にお問い合わせください。" data-en="Overseas manufacturers considering expansion into the Japanese market, please feel free to contact us." data-zh="考虑进入日本市场的海外制造商，欢迎随时与我们联系。" data-ko="일본 시장 진출을 고려하시는 해외 제조업체 여러분, 편하게 문의해 주세요.">日本市場への展開をお考えの海外メーカー様、お気軽にお問い合わせください。</p>
-      <a href="contact.html" class="btn btn-primary" data-ja="お問い合わせはこちら" data-en="Contact Us" data-zh="联系我们" data-ko="문의하기">お問い合わせはこちら</a>
+  <!-- Products -->
+  <section id="products" class="section soft">
+    <div class="wrap">
+      <div class="heading reveal"><h2 class="en">PRODUCTS</h2><span class="jp" data-ja="取扱カテゴリー" data-en="Categories" data-zh="经营品类" data-ko="취급 카테고리">取扱カテゴリー</span></div>
+      <div class="cats">
+        <div class="cat reveal"><div class="cat-img"><img src="images/appliances.jpg" alt=""></div><p class="cat-en">Appliances</p><p class="cat-jp" data-ja="家電製品" data-en="Home appliances" data-zh="家电产品" data-ko="가전제품">家電製品</p></div>
+        <div class="cat reveal"><div class="cat-img"><img src="images/lifestyle.jpg" alt=""></div><p class="cat-en">Lifestyle</p><p class="cat-jp" data-ja="生活雑貨" data-en="Living goods" data-zh="生活杂货" data-ko="생활잡화">生活雑貨</p></div>
+        <div class="cat reveal"><div class="cat-img"><img src="images/tools.jpg" alt=""></div><p class="cat-en">Tools</p><p class="cat-jp" data-ja="工具・機械" data-en="Tools &amp; machinery" data-zh="工具与机械" data-ko="공구·기계">工具・機械</p></div>
+        <div class="cat reveal"><div class="cat-img"><img src="images/apparel.jpg" alt=""></div><p class="cat-en">Apparel</p><p class="cat-jp" data-ja="アパレル" data-en="Fashion" data-zh="服装" data-ko="의류">アパレル</p></div>
+      </div>
+      <div class="center"><a href="services.html" class="btn-line dark">VIEW SERVICES</a></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact-band">
+    <div class="band-bg" style="background-image:url('images/mission-bg.png')"></div>
+    <div class="inner">
+      <p data-ja="日本市場への展開をお考えの海外メーカー様、お気軽にご相談ください。" data-en="Overseas makers considering the Japanese market, we'd love to hear from you." data-zh="考虑进入日本市场的海外制造商，欢迎随时咨询。" data-ko="일본 시장 진출을 고려하시는 해외 제조사 여러분, 편하게 상담해 주세요.">日本市場への展開をお考えの海外メーカー様、お気軽にご相談ください。</p>
+      <a href="contact.html" class="contact-box">CONTACT US</a>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-about">
-          <div class="footer-logo"><img src="images/logo.png" alt="Celeste Trading" class="footer-logo-img">CELESTE TRADING</div>
-          <p class="footer-text" data-ja="ブランド代理店事業・EC運営事業・広告運営事業を通じて、海外メーカーの日本市場展開をサポートします。" data-en="We support overseas manufacturers entering the Japanese market through brand agency, e-commerce operations, and advertising management." data-zh="通过品牌代理、电商运营和广告管理业务，支持海外制造商进入日本市场。" data-ko="브랜드 대리점 사업·EC 운영 사업·광고 운영 사업을 통해 해외 제조업체의 일본 시장 진출을 서포트합니다.">ブランド代理店事業・EC運営事業・広告運営事業を通じて、海外メーカーの日本市場展開をサポートします。</p>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand"><img src="images/logo.png" alt="">CELESTE</div>
+          <p class="footer-about">Celeste Trading<br>Operated by AveniRu Co., Ltd.</p>
         </div>
-
-        <div class="footer-nav">
-          <h4 class="footer-title" data-ja="メニュー" data-en="Menu" data-zh="菜单" data-ko="메뉴">メニュー</h4>
-          <ul class="footer-links">
-            <li><a href="index.html" data-ja="ホーム" data-en="Home" data-zh="首页" data-ko="홈">ホーム</a></li>
+        <div>
+          <h4>BUSINESS</h4>
+          <ul>
+            <li><a href="services.html" data-ja="ブランド総代理店事業" data-en="Brand Agency" data-zh="品牌总代理" data-ko="브랜드 총판">ブランド総代理店事業</a></li>
+            <li><a href="services.html" data-ja="EC運営事業" data-en="E-Commerce" data-zh="电商运营" data-ko="EC 운영">EC運営事業</a></li>
+            <li><a href="services.html" data-ja="広告運営事業" data-en="Advertising" data-zh="广告运营" data-ko="광고 운영">広告運営事業</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>COMPANY</h4>
+          <ul>
             <li><a href="about.html" data-ja="会社概要" data-en="About" data-zh="公司简介" data-ko="회사소개">会社概要</a></li>
-            <li><a href="services.html" data-ja="事業内容" data-en="Services" data-zh="业务内容" data-ko="사업내용">事業内容</a></li>
-            <li><a href="contact.html" data-ja="お問い合わせ" data-en="Contact" data-zh="联系我们" data-ko="문의하기">お問い合わせ</a></li>
           </ul>
         </div>
-
-        <div class="footer-contact">
-          <h4 class="footer-title" data-ja="お問い合わせ" data-en="Contact" data-zh="联系方式" data-ko="문의처">お問い合わせ</h4>
-          <ul class="footer-links">
-            <li>info@celeste-trading.jp</li>
+        <div>
+          <h4>CONTACT</h4>
+          <ul>
+            <li><a href="contact.html" data-ja="お問い合わせ" data-en="Inquiry" data-zh="联系我们" data-ko="문의하기">お問い合わせ</a></li>
+            <li style="opacity:.7">info@celeste-trading.jp</li>
           </ul>
         </div>
       </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2026 Celeste Trading. All Rights Reserved.</p>
-      </div>
+      <p class="footer-bottom">&copy; 2026 CELESTE TRADING. ALL RIGHTS RESERVED.</p>
     </div>
   </footer>
 
-  <script src="js/main.js?v=3"></script>
+  <script src="js/main.js?v=4"></script>
 </body>
 </html>

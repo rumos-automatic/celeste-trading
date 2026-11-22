@@ -6,198 +6,143 @@
   <title>お問い合わせ | Celeste Trading</title>
   <meta name="description" content="Celeste Tradingへのお問い合わせ。パートナーシップや製品についてのご質問など、お気軽にご連絡ください。">
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="css/style.css?v=2">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Zen+Kaku+Gothic+New:wght@400;500&family=Noto+Sans+SC:wght@400;500&family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=4">
 </head>
 <body>
-  <!-- Header -->
-  <header class="header">
-    <div class="container">
-      <a href="index.html" class="logo"><img src="images/logo.png" alt="Celeste Trading" class="logo-img">CELESTE <span>TRADING</span></a>
 
+  <header class="header">
+    <div class="wrap">
+      <a href="index.html" class="logo"><img src="images/logo.png" alt="">CELESTE<span class="logo-sub">&nbsp;TRADING</span></a>
       <nav class="nav">
         <ul class="nav-links">
-          <li><a href="index.html" data-ja="ホーム" data-en="Home" data-zh="首页" data-ko="홈">ホーム</a></li>
-          <li><a href="about.html" data-ja="会社概要" data-en="About" data-zh="公司简介" data-ko="회사소개">会社概要</a></li>
-          <li><a href="services.html" data-ja="事業内容" data-en="Services" data-zh="业务内容" data-ko="사업내용">事業内容</a></li>
-          <li><a href="contact.html" class="active" data-ja="お問い合わせ" data-en="Contact" data-zh="联系我们" data-ko="문의하기">お問い合わせ</a></li>
+          <li><a href="services.html">Business</a></li>
+          <li><a href="index.html#products">Products</a></li>
+          <li><a href="about.html">Company</a></li>
+          <li><a href="contact.html" class="current">Contact</a></li>
         </ul>
-
         <div class="lang-switch">
           <button class="active" data-lang="ja">JP</button>
           <button data-lang="en">EN</button>
           <button data-lang="zh">中文</button>
-          <button data-lang="ko">한국어</button>
+          <button data-lang="ko">KR</button>
         </div>
-
-        <div class="menu-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+        <a href="contact.html" class="nav-contact">CONTACT</a>
+        <div class="menu-toggle"><span></span><span></span><span></span></div>
       </nav>
     </div>
   </header>
 
-  <!-- Page Hero -->
   <section class="page-hero">
-    <div class="container">
-      <h1 data-ja="お問い合わせ" data-en="Contact Us" data-zh="联系我们" data-ko="문의하기">お問い合わせ</h1>
+    <div class="hero-bg" style="background-image:url('images/mission-bg.png')"></div>
+    <div class="inner">
+      <h1>CONTACT</h1>
+      <p data-ja="お問い合わせ" data-en="Get in Touch" data-zh="联系我们" data-ko="문의하기">お問い合わせ</p>
     </div>
   </section>
 
-  <!-- Contact Section -->
   <section class="section">
-    <div class="container">
-      <div class="contact-wrapper">
-        <div class="contact-info">
-          <h3 data-ja="お問い合わせについて" data-en="About Inquiries" data-zh="关于咨询" data-ko="문의에 대하여">お問い合わせについて</h3>
-          <p data-ja="パートナーシップ、製品についてのご質問、取引条件のご相談など、お気軽にお問い合わせください。担当者より折り返しご連絡いたします。" data-en="Please feel free to contact us about partnership, product inquiries, or business terms. Our representative will get back to you shortly." data-zh="如有关于合作、产品咨询或交易条款的问题，请随时与我们联系。我们的负责人将尽快回复您。" data-ko="파트너십, 제품에 대한 질문, 거래 조건 상담 등, 편하게 문의해 주세요. 담당자가 다시 연락드리겠습니다.">パートナーシップ、製品についてのご質問、取引条件のご相談など、お気軽にお問い合わせください。担当者より折り返しご連絡いたします。</p>
-
-          <ul class="contact-details">
-            <li>
-              <span class="contact-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-                  <path d="M22 6L12 13L2 6"></path>
-                </svg>
-              </span>
-              <div>
-                <strong data-ja="メール" data-en="Email" data-zh="邮箱" data-ko="이메일">メール</strong><br>
-                info@celeste-trading.jp
-              </div>
-            </li>
-            <li>
-              <span class="contact-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <line x1="2" y1="12" x2="22" y2="12"></line>
-                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                </svg>
-              </span>
-              <div>
-                <strong data-ja="対応言語" data-en="Languages" data-zh="服务语言" data-ko="대응 언어">対応言語</strong><br>
-                <span data-ja="日本語 / English" data-en="Japanese / English" data-zh="日语 / 英语" data-ko="일본어 / English">日本語 / English</span>
-              </div>
-            </li>
-            <li>
-              <span class="contact-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 6 12 12 16 14"></polyline>
-                </svg>
-              </span>
-              <div>
-                <strong data-ja="営業時間" data-en="Business Hours" data-zh="营业时间" data-ko="영업시간">営業時間</strong><br>
-                <span data-ja="平日 9:00 - 18:00（JST）" data-en="Weekdays 9:00 - 18:00 (JST)" data-zh="工作日 9:00 - 18:00（日本时间）" data-ko="평일 9:00 - 18:00 (JST)">平日 9:00 - 18:00（JST）</span>
-              </div>
-            </li>
+    <div class="wrap">
+      <div class="contact-grid">
+        <div class="reveal">
+          <p class="eyebrow">INQUIRY</p>
+          <div class="split" style="display:block"><h2 data-ja="まずはお気軽に、<br>ご相談ください。" data-en="Let's start<br>a conversation." data-zh="欢迎随时<br>与我们联系。" data-ko="먼저 편하게<br>상담해 주세요.">まずはお気軽に、<br>ご相談ください。</h2></div>
+          <p style="margin-top:24px" data-ja="パートナーシップ、製品についてのご質問、取引条件のご相談など、お気軽にお問い合わせください。担当者より折り返しご連絡いたします。" data-en="Whether it's partnership, product questions or business terms, feel free to reach out. Our team will get back to you shortly." data-zh="如有关于合作、产品或交易条件的问题，请随时与我们联系。负责人将尽快回复您。" data-ko="파트너십, 제품 관련 질문, 거래 조건 상담 등 편하게 문의해 주세요. 담당자가 회신드리겠습니다.">パートナーシップ、製品についてのご質問、取引条件のご相談など、お気軽にお問い合わせください。担当者より折り返しご連絡いたします。</p>
+          <ul class="meta">
+            <li><span class="k">EMAIL</span><span class="v">info@celeste-trading.jp</span></li>
+            <li><span class="k">LANGUAGES</span><span class="v" data-ja="日本語 / English" data-en="Japanese / English" data-zh="日语 / 英语" data-ko="일본어 / English">日本語 / English</span></li>
+            <li><span class="k">HOURS</span><span class="v" data-ja="平日 9:00 - 18:00（JST）" data-en="Weekdays 9:00 - 18:00 (JST)" data-zh="工作日 9:00 - 18:00（日本时间）" data-ko="평일 9:00 - 18:00 (JST)">平日 9:00 - 18:00（JST）</span></li>
           </ul>
         </div>
 
-        <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
-          <div class="form-group">
-            <label for="company" data-ja="会社名" data-en="Company Name" data-zh="公司名称" data-ko="회사명">会社名</label>
+        <form class="form reveal" action="https://formspree.io/f/your-form-id" method="POST">
+          <div class="field">
+            <label for="company"><span data-ja="会社名" data-en="Company" data-zh="公司名称" data-ko="회사명">会社名</span></label>
             <input type="text" id="company" name="company" placeholder="Company Name">
           </div>
-
-          <div class="form-group">
-            <label for="name" data-ja="お名前 *" data-en="Name *" data-zh="姓名 *" data-ko="성함 *">お名前 *</label>
+          <div class="field">
+            <label for="name"><span data-ja="お名前" data-en="Name" data-zh="姓名" data-ko="성함">お名前</span><span class="req">REQUIRED</span></label>
             <input type="text" id="name" name="name" required placeholder="Your Name">
           </div>
-
-          <div class="form-group">
-            <label for="email" data-ja="メールアドレス *" data-en="Email Address *" data-zh="电子邮箱 *" data-ko="이메일 주소 *">メールアドレス *</label>
+          <div class="field">
+            <label for="email"><span data-ja="メールアドレス" data-en="Email" data-zh="电子邮箱" data-ko="이메일 주소">メールアドレス</span><span class="req">REQUIRED</span></label>
             <input type="email" id="email" name="email" required placeholder="your@email.com">
           </div>
-
-          <div class="form-group">
-            <label for="subject" data-ja="件名" data-en="Subject" data-zh="主题" data-ko="제목">件名</label>
+          <div class="field">
+            <label for="subject"><span data-ja="ご用件" data-en="Subject" data-zh="主题" data-ko="용건">ご用件</span></label>
             <select id="subject" name="subject">
               <option value="" data-ja="選択してください" data-en="Please select" data-zh="请选择" data-ko="선택해 주세요">選択してください</option>
-              <option value="partnership" data-ja="パートナーシップについて" data-en="Partnership Inquiry" data-zh="关于合作" data-ko="파트너십에 대하여">パートナーシップについて</option>
-              <option value="product" data-ja="製品について" data-en="Product Inquiry" data-zh="关于产品" data-ko="제품에 대하여">製品について</option>
-              <option value="business" data-ja="取引条件について" data-en="Business Terms" data-zh="关于交易条款" data-ko="거래 조건에 대하여">取引条件について</option>
+              <option value="partnership" data-ja="パートナーシップについて" data-en="Partnership" data-zh="关于合作" data-ko="파트너십에 대하여">パートナーシップについて</option>
+              <option value="product" data-ja="製品について" data-en="Products" data-zh="关于产品" data-ko="제품에 대하여">製品について</option>
+              <option value="business" data-ja="取引条件について" data-en="Business terms" data-zh="关于交易条件" data-ko="거래 조건에 대하여">取引条件について</option>
               <option value="other" data-ja="その他" data-en="Other" data-zh="其他" data-ko="기타">その他</option>
             </select>
           </div>
-
-          <div class="form-group">
-            <label for="message" data-ja="メッセージ *" data-en="Message *" data-zh="留言 *" data-ko="메시지 *">メッセージ *</label>
+          <div class="field">
+            <label for="message"><span data-ja="メッセージ" data-en="Message" data-zh="留言" data-ko="메시지">メッセージ</span><span class="req">REQUIRED</span></label>
             <textarea id="message" name="message" required placeholder="Please enter your message here..."></textarea>
           </div>
-
-          <button type="submit" class="btn btn-primary" style="width: 100%;" data-ja="送信する" data-en="Send Message" data-zh="发送" data-ko="전송하기">送信する</button>
+          <button type="submit" class="btn-line dark" data-ja="送信する" data-en="SEND" data-zh="发送" data-ko="전송하기">送信する</button>
         </form>
       </div>
     </div>
   </section>
 
-  <!-- FAQ Section -->
-  <section class="section section-gray">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-subtitle" data-ja="FAQ" data-en="FAQ" data-zh="常见问题" data-ko="FAQ">FAQ</p>
-        <h2 class="section-title" data-ja="よくあるご質問" data-en="Frequently Asked Questions" data-zh="常见问题解答" data-ko="자주 묻는 질문">よくあるご質問</h2>
-      </div>
-
-      <div class="features">
-        <div class="feature-card">
-          <h3 class="feature-title" data-ja="Q. どのような製品を取り扱っていますか？" data-en="Q. What products do you handle?" data-zh="Q. 你们经营哪些产品？" data-ko="Q. 어떤 제품을 취급하고 있나요?">Q. どのような製品を取り扱っていますか？</h3>
-          <p class="feature-text" data-ja="A. 家電製品、工具・機械、生活雑貨、アパレルを中心に取り扱っています。その他の商材についてもご相談ください。" data-en="A. We primarily handle home appliances, tools & machinery, general goods, and apparel. Please contact us for other product categories." data-zh="A. 我们主要经营家电产品、工具与机械、生活杂货和服装。如有其他产品类别，欢迎咨询。" data-ko="A. 가전제품, 공구·기계, 생활잡화, 의류를 중심으로 취급하고 있습니다. 기타 상품에 대해서도 상담해 주세요.">A. 家電製品、工具・機械、生活雑貨、アパレルを中心に取り扱っています。その他の商材についてもご相談ください。</p>
-        </div>
-
-        <div class="feature-card">
-          <h3 class="feature-title" data-ja="Q. 最小ロット数はありますか？" data-en="Q. Is there a minimum order quantity?" data-zh="Q. 有最小起订量吗？" data-ko="Q. 최소 주문 수량이 있나요?">Q. 最小ロット数はありますか？</h3>
-          <p class="feature-text" data-ja="A. 製品によって異なります。詳細はお問い合わせください。" data-en="A. It varies by product. Please contact us for details." data-zh="A. 因产品而异。详情请联系我们。" data-ko="A. 제품에 따라 다릅니다. 자세한 내용은 문의해 주세요.">A. 製品によって異なります。詳細はお問い合わせください。</p>
-        </div>
-
-        <div class="feature-card">
-          <h3 class="feature-title" data-ja="Q. 契約までの流れを教えてください。" data-en="Q. What is the process for partnership?" data-zh="Q. 合作流程是怎样的？" data-ko="Q. 계약까지의 흐름을 알려주세요.">Q. 契約までの流れを教えてください。</h3>
-          <p class="feature-text" data-ja="A. お問い合わせ → 市場分析 → ご提案 → 契約締結 → 販売開始 の流れとなります。" data-en="A. The process is: Inquiry → Market Analysis → Proposal → Contract → Sales Launch." data-zh="A. 流程为：咨询 → 市场分析 → 提案 → 签约 → 开始销售。" data-ko="A. 문의 → 시장분석 → 제안 → 계약 체결 → 판매 개시의 흐름입니다.">A. お問い合わせ → 市場分析 → ご提案 → 契約締結 → 販売開始 の流れとなります。</p>
-        </div>
+  <section class="section soft">
+    <div class="wrap">
+      <div class="heading reveal"><h2 class="en">FAQ</h2><span class="jp" data-ja="よくあるご質問" data-en="Frequently Asked Questions" data-zh="常见问题" data-ko="자주 묻는 질문">よくあるご質問</span></div>
+      <div class="faq reveal">
+        <details open>
+          <summary><span class="q">Q</span><span data-ja="どのような製品を取り扱っていますか？" data-en="What products do you handle?" data-zh="你们经营哪些产品？" data-ko="어떤 제품을 취급하나요?">どのような製品を取り扱っていますか？</span></summary>
+          <div class="ans"><span class="a">A</span><span data-ja="家電製品、工具・機械、生活雑貨、アパレルを中心に取り扱っています。その他の商材についてもご相談ください。" data-en="Mainly home appliances, tools and machinery, living goods and apparel. Please ask us about other categories too." data-zh="主要经营家电产品、工具与机械、生活杂货和服装。其他品类也欢迎咨询。" data-ko="가전제품, 공구·기계, 생활잡화, 의류를 중심으로 취급합니다. 그 외 상품도 상담해 주세요.">家電製品、工具・機械、生活雑貨、アパレルを中心に取り扱っています。その他の商材についてもご相談ください。</span></div>
+        </details>
+        <details>
+          <summary><span class="q">Q</span><span data-ja="最小ロット数はありますか？" data-en="Is there a minimum order quantity?" data-zh="有最小起订量吗？" data-ko="최소 주문 수량이 있나요?">最小ロット数はありますか？</span></summary>
+          <div class="ans"><span class="a">A</span><span data-ja="製品によって異なります。詳細はお問い合わせください。" data-en="It depends on the product. Please contact us for details." data-zh="因产品而异，详情请联系我们。" data-ko="제품에 따라 다릅니다. 자세한 내용은 문의해 주세요.">製品によって異なります。詳細はお問い合わせください。</span></div>
+        </details>
+        <details>
+          <summary><span class="q">Q</span><span data-ja="契約までの流れを教えてください。" data-en="What does the process look like?" data-zh="合作流程是怎样的？" data-ko="계약까지의 흐름을 알려 주세요.">契約までの流れを教えてください。</span></summary>
+          <div class="ans"><span class="a">A</span><span data-ja="お問い合わせ → 市場分析 → ご提案 → 契約締結 → 販売開始 の流れとなります。" data-en="Inquiry → Market analysis → Proposal → Contract → Sales launch." data-zh="咨询 → 市场分析 → 提案 → 签约 → 开始销售。" data-ko="문의 → 시장 분석 → 제안 → 계약 체결 → 판매 개시 순서로 진행됩니다.">お問い合わせ → 市場分析 → ご提案 → 契約締結 → 販売開始 の流れとなります。</span></div>
+        </details>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-about">
-          <div class="footer-logo"><img src="images/logo.png" alt="Celeste Trading" class="footer-logo-img">CELESTE TRADING</div>
-          <p class="footer-text" data-ja="ブランド代理店事業・EC運営事業・広告運営事業を通じて、海外メーカーの日本市場展開をサポートします。" data-en="We support overseas manufacturers entering the Japanese market through brand agency, e-commerce operations, and advertising management." data-zh="通过品牌代理、电商运营和广告管理业务，支持海外制造商进入日本市场。" data-ko="브랜드 대리점 사업·EC 운영 사업·광고 운영 사업을 통해 해외 제조업체의 일본 시장 진출을 서포트합니다.">ブランド代理店事業・EC運営事業・広告運営事業を通じて、海外メーカーの日本市場展開をサポートします。</p>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand"><img src="images/logo.png" alt="">CELESTE</div>
+          <p class="footer-about">Celeste Trading<br>Operated by AveniRu Co., Ltd.</p>
         </div>
-
-        <div class="footer-nav">
-          <h4 class="footer-title" data-ja="メニュー" data-en="Menu" data-zh="菜单" data-ko="메뉴">メニュー</h4>
-          <ul class="footer-links">
-            <li><a href="index.html" data-ja="ホーム" data-en="Home" data-zh="首页" data-ko="홈">ホーム</a></li>
+        <div>
+          <h4>BUSINESS</h4>
+          <ul>
+            <li><a href="services.html#brand" data-ja="ブランド総代理店事業" data-en="Brand Agency" data-zh="品牌总代理" data-ko="브랜드 총판">ブランド総代理店事業</a></li>
+            <li><a href="services.html#ec" data-ja="EC運営事業" data-en="E-Commerce" data-zh="电商运营" data-ko="EC 운영">EC運営事業</a></li>
+            <li><a href="services.html#ads" data-ja="広告運営事業" data-en="Advertising" data-zh="广告运营" data-ko="광고 운영">広告運営事業</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>COMPANY</h4>
+          <ul>
             <li><a href="about.html" data-ja="会社概要" data-en="About" data-zh="公司简介" data-ko="회사소개">会社概要</a></li>
-            <li><a href="services.html" data-ja="事業内容" data-en="Services" data-zh="业务内容" data-ko="사업내용">事業内容</a></li>
-            <li><a href="contact.html" data-ja="お問い合わせ" data-en="Contact" data-zh="联系我们" data-ko="문의하기">お問い合わせ</a></li>
           </ul>
         </div>
-
-        <div class="footer-contact">
-          <h4 class="footer-title" data-ja="お問い合わせ" data-en="Contact" data-zh="联系方式" data-ko="문의처">お問い合わせ</h4>
-          <ul class="footer-links">
-            <li>info@celeste-trading.jp</li>
+        <div>
+          <h4>CONTACT</h4>
+          <ul>
+            <li><a href="contact.html" data-ja="お問い合わせ" data-en="Inquiry" data-zh="联系我们" data-ko="문의하기">お問い合わせ</a></li>
+            <li style="opacity:.7">info@celeste-trading.jp</li>
           </ul>
         </div>
       </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2026 Celeste Trading. All Rights Reserved.</p>
-      </div>
+      <p class="footer-bottom">&copy; 2026 CELESTE TRADING. ALL RIGHTS RESERVED.</p>
     </div>
   </footer>
 
-  <script src="js/main.js?v=3"></script>
+  <script src="js/main.js?v=4"></script>
 </body>
 </html>

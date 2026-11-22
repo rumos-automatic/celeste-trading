@@ -1,208 +1,67 @@
-// Celeste Trading - Main JavaScript
-
-document.addEventListener('DOMContentLoaded', function() {
-
-  // ==========================================
-  // Language Switcher (Japanese, English, Chinese, Korean)
-  // ==========================================
-  const langButtons = document.querySelectorAll('.lang-switch button');
-  let currentLang = localStorage.getItem('language') || 'ja';
-
-  // Initialize language
-  setLanguage(currentLang);
-
-  langButtons.forEach(button => {
-    button.addEventListener('click', function() {
-      const lang = this.getAttribute('data-lang');
-      setLanguage(lang);
-      localStorage.setItem('language', lang);
+// Celeste Trading - redesign scripts (language switch, header, menu, reveal)
+(function () {
+  // Language switch: elements carry data-ja / data-en / data-zh / data-ko
+  var btns = document.querySelectorAll('.lang-switch button');
+  function setLang(lang) {
+    btns.forEach(function (b) { b.classList.toggle('active', b.dataset.lang === lang); });
+    document.querySelectorAll('[data-ja]').forEach(function (el) {
+      var t = el.getAttribute('data-' + lang);
+      if (!t) return;
+      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') el.placeholder = t;
+      else el.innerHTML = t;
     });
-  });
-
-  function setLanguage(lang) {
-    currentLang = lang;
-
-    // Update button states
-    langButtons.forEach(btn => {
-      btn.classList.remove('active');
-      if (btn.getAttribute('data-lang') === lang) {
-        btn.classList.add('active');
-      }
-    });
-
-    // Update all translatable elements
-    const elements = document.querySelectorAll('[data-ja]');
-    elements.forEach(el => {
-      const text = el.getAttribute(`data-${lang}`);
-      if (text) {
-        if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-          el.placeholder = text;
-        } else if (el.tagName === 'OPTION') {
-          el.textContent = text;
-        } else {
-          el.innerHTML = text;
-        }
-      }
-    });
-
-    // Update html lang attribute
     document.documentElement.lang = lang;
   }
-
-  // ==========================================
-  // Mobile Menu Toggle
-  // ==========================================
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navLinks = document.querySelector('.nav-links');
-
-  if (menuToggle) {
-    menuToggle.addEventListener('click', function() {
-      navLinks.classList.toggle('active');
-      this.classList.toggle('active');
-    });
-  }
-
-  // Close menu when clicking outside
-  document.addEventListener('click', function(e) {
-    if (!e.target.closest('.nav') && navLinks.classList.contains('active')) {
-      navLinks.classList.remove('active');
-      menuToggle.classList.remove('active');
-    }
-  });
-
-  // Close menu when clicking a link
-  navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('active');
-      menuToggle.classList.remove('active');
+  var saved = 'ja';
+  try { saved = localStorage.getItem('language') || 'ja'; } catch (e) {}
+  setLang(saved);
+  btns.forEach(function (b) {
+    b.addEventListener('click', function () {
+      setLang(b.dataset.lang);
+      try { localStorage.setItem('language', b.dataset.lang); } catch (e) {}
     });
   });
 
-  // ==========================================
-  // Header Scroll Effect
-  // ==========================================
-  const header = document.querySelector('.header');
-  let lastScroll = 0;
+  // Header turns solid after the hero
+  var header = document.querySelector('.header');
+  function onScroll() { header.classList.toggle('scrolled', window.scrollY > 80); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
 
-  window.addEventListener('scroll', function() {
-    const currentScroll = window.pageYOffset;
-
-    if (currentScroll > 100) {
-      header.style.boxShadow = '0 2px 30px rgba(0, 0, 0, 0.1)';
-    } else {
-      header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.05)';
-    }
-
-    lastScroll = currentScroll;
+  // Mobile menu
+  var toggle = document.querySelector('.menu-toggle');
+  var links = document.querySelector('.nav-links');
+  toggle.addEventListener('click', function () {
+    links.classList.toggle('active');
+    toggle.classList.toggle('active');
   });
-
-  // ==========================================
-  // Hero Slideshow
-  // ==========================================
-  const heroSlides = document.querySelectorAll('.hero-slide');
-  if (heroSlides.length > 1) {
-    let currentSlide = 0;
-    setInterval(() => {
-      heroSlides[currentSlide].classList.remove('active');
-      currentSlide = (currentSlide + 1) % heroSlides.length;
-      heroSlides[currentSlide].classList.add('active');
-    }, 5000);
-  }
-
-  // ==========================================
-  // Smooth Scroll for Anchor Links
-  // ==========================================
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        target.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
-      }
+  links.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      links.classList.remove('active');
+      toggle.classList.remove('active');
     });
   });
 
-  // ==========================================
-  // Fade In Animation on Scroll
-  // ==========================================
-  const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-  };
-
-  const observer = new IntersectionObserver(function(entries) {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('fade-in-up');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, observerOptions);
-
-  // Observe elements
-  document.querySelectorAll('.feature-card, .service-card, .stat-item').forEach(el => {
-    el.style.opacity = '0';
-    observer.observe(el);
-  });
-
-  // ==========================================
-  // Form Handling (Contact Page)
-  // ==========================================
-  const contactForm = document.querySelector('.contact-form');
-
-  if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-      // Form validation is handled by HTML5 required attributes
-      // You can add additional validation here if needed
-
-      const submitBtn = this.querySelector('button[type="submit"]');
-      const originalText = submitBtn.innerHTML;
-
-      const sendingText = { ja: '送信中...', en: 'Sending...', zh: '发送中...', ko: '전송 중...' };
-      submitBtn.innerHTML = sendingText[currentLang] || '送信中...';
-      submitBtn.disabled = true;
-
-      // Re-enable button after form submission (in case of error)
-      setTimeout(() => {
-        submitBtn.innerHTML = originalText;
-        submitBtn.disabled = false;
-      }, 5000);
-    });
-  }
-
-  // ==========================================
-  // Stats Counter Animation
-  // ==========================================
-  const stats = document.querySelectorAll('.stat-number');
-  let statsAnimated = false;
-
-  function animateStats() {
-    if (statsAnimated) return;
-
-    stats.forEach(stat => {
-      const text = stat.getAttribute(`data-${currentLang}`) || stat.textContent;
-      stat.textContent = text;
-    });
-
-    statsAnimated = true;
-  }
-
-  // Trigger stats animation when in view
-  const statsSection = document.querySelector('.stats');
-  if (statsSection) {
-    const statsObserver = new IntersectionObserver(function(entries) {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          animateStats();
-          statsObserver.unobserve(entry.target);
-        }
+  // Fade in on scroll
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); }
       });
-    }, { threshold: 0.5 });
-
-    statsObserver.observe(statsSection);
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('on'); });
   }
 
-});
+  // Contact form: show sending state
+  var form = document.querySelector('.form');
+  if (form) {
+    form.addEventListener('submit', function () {
+      var btn = form.querySelector('button[type="submit"]');
+      var label = { ja: '送信中...', en: 'Sending...', zh: '发送中...', ko: '전송 중...' };
+      btn.textContent = label[document.documentElement.lang] || label.ja;
+      btn.disabled = true;
+    });
+  }
+})();
